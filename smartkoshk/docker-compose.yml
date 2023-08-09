@@ -8,7 +8,7 @@ services:
     volumes:
       - ./src:/React_smart_koshk/src:ro
     ports:
-      - "3061:3061"
+      - "3070:3070"
     environment:
       - NODE_ENV=production
     restart: always
