@@ -1,0 +1,154 @@
+:root {
+    --first-color: #FFFBE9;
+    --second-color: #E57C23;
+    --third-color: #F4EAD5;
+    --fourth-color: #85A389;
+    --fifth-color: #A4907C;
+}
+
+.wishlist-heading {
+    font-size: 40px;
+    margin-left: 30px !important;
+    color: #A4907C;
+}
+
+.wishlist-body {
+    height: fit-content;
+    
+}
+
+.wishlist-empty {
+    color: #E57C23;
+    font-size: 25px;
+    margin-left: 30px !important;
+}
+
+.card-group {
+    margin-top: 25px;
+    
+    height: fit-content;
+}
+
+.card-wishlist {
+    width: 25%;
+    min-width: 280px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-color: #FFF;
+}
+
+.card-wishlist:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #A4907C !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+}
+
+.card-text {
+    font-size: 16px;
+    color: var(--second-color);
+    margin-bottom: 20px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.wishlist {
+    background-color: #E57C23 !important;
+    margin: 20px !important;
+    padding: 8px !important;
+    color: #FFFBE9 !important;
+    width: 100px;
+}
+
+.btn {
+    padding: 10px 20px;
+    /* border-radius: 5px; */
+    font-size: 16px;
+    
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+
+
+@media (max-width: 576px) {
+
+    /* Styles for extra small devices (phones) */
+    .wishlist-heading {
+        font-size: 30px;
+    }
+
+    .card-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-wishlist {
+        width: 280px;
+    }
+
+    .card img {
+        height: 180px;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .card-text {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Styles for small devices (tablets) */
+    .wishlist-heading {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    /* Styles for medium devices (desktops, laptops) */
+    .wishlist-heading {
+        font-size: 45px;
+    }
+
+    .card-group {
+        justify-content: space-between;
+    }
+}
